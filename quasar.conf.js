@@ -14,13 +14,12 @@ module.exports = function (/* ctx */) {
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
     boot: [
       
-      'i18n',
       'axios',
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
-      'app.styl'
+      'app.css'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
@@ -59,7 +58,7 @@ module.exports = function (/* ctx */) {
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
-    supportIE: true,
+    supportIE: false,
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts
     supportTS: false,
@@ -115,8 +114,8 @@ cfg.module.rules.push({
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Quasar App',
-        short_name: 'Quasar App',
+        name: 'qua sar todo',
+        short_name: 'qua sar todo',
         description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',
@@ -183,7 +182,7 @@ cfg.module.rules.push({
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'taxi'
+        appId: 'quasar-todo'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
